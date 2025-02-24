@@ -1,7 +1,7 @@
 import process from "process"
-import redline from "readline"
+import readline from "readline"
 
-const input = redline.createInterface({
+const input = readline.createInterface({
     input : process.stdin,
     output : process.stdout
 })
