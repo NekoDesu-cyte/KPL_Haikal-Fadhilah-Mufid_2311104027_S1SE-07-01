@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input & Output</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background: #b0b0b0;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            width: 50%;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input {
+            width: 75%;
+            padding: 12px;
+            border: 2px solid #888;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #1aadca;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        button:hover {
+            background: #1aadca;
+        }
+
+        .hasil {
+            margin-top: 20px;
+            background: #1aadca;
+            padding: 12px;
+            color: white;
+            font-size: 14px;
+            border-radius: 6px;
+            display: inline-block;
+            min-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h3>Enter Your Name</h3>
+        <input type="text" id="namaInput" placeholder="Write Here...">
+        <button onclick="Enter()">Enter</button>
+        <div class="hasil">
+            <label id="hasilText">Output :</label>
+        </div>
+    </div>
+
+    <script>
+        function Enter() {
+            let nama = document.getElementById("namaInput").value;
+            document.getElementById("hasilText").innerText = "Output : Hello " + nama;
+        }
+    </script>
+</body>
+
+</html>
