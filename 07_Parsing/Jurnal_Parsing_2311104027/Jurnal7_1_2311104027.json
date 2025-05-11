@@ -1,0 +1,11 @@
+{
+    "firstName": "Haikal",
+    "lastName": "Fadhilah",
+    "gender": "Male",
+    "age": 21,
+    "address": {
+        "streetAddress": "Sokanandi",
+        "city": "Banjarnegara",
+        "state": "Central Java"
+    }
+ }

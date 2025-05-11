@@ -1,0 +1,32 @@
+{
+"members" : [
+    {
+       "firstName": "Andika",
+       "lastName": "Rifki Pratama",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104011"
+    },
+    {
+       "firstName": "Ardhian",
+       "lastName": "Dwi Saputra",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104013"
+    },
+    {
+       "firstName": "Farrel",
+       "lastName": "Izaz Yuwono",
+       "gender": "male",
+       "age": 20,
+       "nim": "2311104014"
+    },
+    {
+      "firstName": "Hafizh",
+      "lastName": "Dwi Andhika",
+      "gender": "male",
+      "age": 20,
+      "nim": "2311104013"
+   }
+  ]
+}

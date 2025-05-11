@@ -1,0 +1,24 @@
+{
+	"courses": [
+		{
+			"code": "CRI2C7",
+			"name": "Manajemen Bisnis"
+		},
+		{
+			"code": "CRI2C5",
+			"name": "Pemodelan Perangkat lUnak"
+		},
+		{
+			"code": "CRI2C4",
+			"name": "Konstruksi Perangkat Lunak"
+		},
+		{
+			"code": "CRI2C8",
+			"name": "Pengabdian Masyarakat"
+		},
+		{
+			"code": "CRI2C6",
+			"name": "Basis Data"
+		}
+	]
+}
