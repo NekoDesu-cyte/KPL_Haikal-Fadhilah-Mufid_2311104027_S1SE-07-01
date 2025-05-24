@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 12 Testing - Cari Nilai Pangkat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen">
+    <div class="bg-red-600 text-white p-6 rounded-lg shadow-lg w-1/3">
+        <h2 class="text-xl font-semibold mb-4">Cari Nilai Pangkat</h2>
+        <input type="number" id="inputA" class="border p-2 w-full mb-2 text-black" placeholder="Masukkan angka a">
+        <input type="number" id="inputB" class="border p-2 w-full mb-4 text-black" placeholder="Masukkan angka b">
+        <button onclick="prosesPangkat()" class="bg-white text-red-600 px-4 py-2 rounded font-semibold">Hitung Pangkat</button>
+        <p id="output" class="mt-4 text-lg font-medium"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
