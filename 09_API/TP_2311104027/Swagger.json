@@ -1,0 +1,93 @@
+
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "TP Modul 9 API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/mahasiswa": {
+      "get": {
+        "summary": "Ambil semua mahasiswa",
+        "responses": {
+          "200": {
+            "description": "Daftar mahasiswa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Mahasiswa" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add Student",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Mahasiswa" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Mahasiswa ditambahkan" }
+        }
+      }
+    },
+    "/api/mahasiswa/{index}": {
+      "get": {
+        "summary": "Ambil mahasiswa berdasarkan index",
+        "parameters": [
+          {
+            "name": "index",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data mahasiswa",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Mahasiswa" }
+              }
+            }
+          },
+          "404": { "description": "Mahasiswa Not Found" }
+        }
+      },
+      "delete": {
+        "summary": "Hapus mahasiswa berdasarkan index",
+        "parameters": [
+          {
+            "name": "index",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "DELETE COMPLETE" },
+          "404": { "description": "Mahasiswa Not Found" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Mahasiswa": {
+        "type": "object",
+        "properties": {
+          "Nama": { "type": "string" },
+          "Nim": { "type": "string" }
+        },
+        "required": ["Nama", "Nim"]
+      }
+    }
+  }
+}
